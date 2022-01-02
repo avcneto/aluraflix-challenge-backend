@@ -45,7 +45,7 @@ public class CategoryController {
                 dao.save(category);
                 return ResponseEntity.ok(category);
             }
-            return new ResponseEntity("The field is mandatory", HttpStatus.BAD_REQUEST);
+            return new ResponseEntity("The field is mandatory ", HttpStatus.BAD_REQUEST);
 
         } catch (Exception ex) {
             ex.printStackTrace();
